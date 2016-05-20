@@ -1,5 +1,5 @@
 {
-  "name": "pgp-schedule",
+  "name": "logs-management-system",
   "version": "0.0.0",
   "dependencies": {
     "bootstrap": "3.3.6",
@@ -8,7 +8,7 @@
     "font-awesome": "4.5.0"
   },
   "appPath": "www",
-  "moduleName": "pgp-schedule",
+  "moduleName": "logs-management-system-app",
   "overrides": {
     "bootstrap": {
       "main": [

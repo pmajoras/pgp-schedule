@@ -16,7 +16,7 @@ export default class AuthenticationForm extends React.Component {
     this.submitForm = this.submitForm.bind(this);
 
     this.state = {
-      canSubmit: false,
+      canSubmit: true,
       serverErrors: [],
       isSubmitting: false
     };
@@ -54,7 +54,6 @@ export default class AuthenticationForm extends React.Component {
   }
 
   handleValid() {
-    console.log("valid");
     if (!this.state.canSubmit) {
       this.setState({
         canSubmit: true
@@ -63,7 +62,6 @@ export default class AuthenticationForm extends React.Component {
   }
 
   handleInvalid() {
-    console.log("invalid");
     if (this.state.canSubmit) {
       this.setState({
         canSubmit: false

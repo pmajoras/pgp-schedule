@@ -32,6 +32,9 @@ exports.start = () => {
   routes.setup(apiApp, controllers);
   app.use('/api', apiApp);
 
+  //var webApp = express();
+  //webApp.use('/', express.static('www'));
+
   app.use('/', express.static('www'));
 
   app.use(function(req, res) {
