@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, browserHistory } from "react-router";
 
 import Info from "./pages/Info.jsx";
 import Welcome from "./pages/Welcome.jsx";
+import Scheduler from "./pages/Scheduler.jsx";
 import Layout from "./pages/Layout.jsx";
 import Authentication from "./pages/authentication/Authentication.jsx";
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -28,6 +29,7 @@ ReactDOM.render(
     <Route path="/" component={Layout}>
       <IndexRoute component={Info}></IndexRoute>
       <Route path="welcome" component={Welcome} onEnter={requireAuth}></Route>
+      <Route path="scheduler" component={Scheduler} onEnter={requireAuth}></Route>
       <Route path="authentication" component={Authentication}></Route>
     </Route>
   </Router>,

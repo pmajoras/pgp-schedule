@@ -15,10 +15,8 @@ var client = new $.RestClient('http://localhost:8085/api/', {
 
 client.add('authentication', { isSingle: true });
 client.authentication.add('authenticate', { isSingle: true });
-client.add('logmessages');
 
 module.exports = {
   client: client,
-  authentication: client.authentication,
-  logMessages: client.logmessages
+  authentication: client.authentication
 };

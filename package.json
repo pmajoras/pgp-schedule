@@ -1,7 +1,7 @@
 {
-  "name": "pgp-schedule",
+  "name": "pgp-scheduler",
   "version": "0.0.0",
-  "description": "Pgp Schedule Generator",
+  "description": "Pgp Scheduler App",
   "main": "index.js",
   "dependencies": {
     "body-parser": "~1.0.1",
@@ -25,11 +25,13 @@
     "mocha": "^2.4.5",
     "mockgoose": "^5.4.1",
     "moment": "^2.12.0",
+    "moment-weekday-calc": "^1.1.1",
     "mongoose": "^4.4.11",
     "morgan": "^1.6.1",
     "q": "^1.4.1",
     "react": "^0.14.8",
     "react-bootstrap": "^0.28.5",
+    "react-datepicker": "^0.27.0",
     "react-dom": "^0.14.8",
     "react-loader": "^2.4.0",
     "react-mixin": "^3.0.4",

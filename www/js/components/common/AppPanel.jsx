@@ -8,14 +8,17 @@ class AppPanel extends React.Component {
 
   render() {
     const message = this.props.headerMessage || "";
-    const containerClasses = "panel panel-primary";
+    let containerClasses = "panel panel-primary";
     if (this.props.classes) {
       containerClasses = containerClasses + " " + this.props.classes;
     }
 
+    const header = this.props.removeHeader === true ? null :
+      <div class="panel-heading">{message}</div>;
+
     return (
       <div class={containerClasses}>
-        <div class="panel-heading">{message}</div>
+        {header}
         <div class="panel-body">
           {this.props.children}
         </div>
